@@ -1,0 +1,17 @@
+{
+  "name": "iot",
+  "version": "1.0.0",
+  "description": "iot testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iot"
+  ],
+  "author": "Matthew W. Sanders",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-iot": "^3.523.0"
+  }
+}
