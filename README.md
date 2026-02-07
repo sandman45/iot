@@ -4,6 +4,30 @@ From AWS IoT in the AWS Console.
 
 - Connect one device
 
+## Raspberry Pi SSH
+
+SSH INFO
+
+device-name: `prototype1pi`
+
+username: `pro`
+
+password: `admin`
+
+Device: `Raspberry Pi`
+
+OS: `Raspberry PI OS (64-bit)`
+
+Storage: `Apple SDXC Reader Media`
+
+```
+ssh pi@<IP_ADDRESS>
+
+ssh pro@192.168.0.194 ( current pi prototype )
+```
+
+
+
 ## Prepare your Device
 1. Turn on your device and make sure it's connected to the internet.
  
@@ -46,6 +70,9 @@ Suggested choices:
   - Device OS: `Linux / macOS`
    
   - AWS IoT Device SDK: `Node.js`
+
+
+
 
 ## Download Connection kit
 
@@ -235,6 +262,7 @@ After running the start script, return to this screen to see the messages betwee
    └── AmazonRootCA1.pem
 
    ```
+
 6. Get your IoT endpoint
 
    In AWS IoT Core:

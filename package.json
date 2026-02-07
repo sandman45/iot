@@ -12,6 +12,8 @@
   "author": "Matthew W. Sanders",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-iot": "^3.523.0"
+    "@aws-sdk/client-iot": "^3.523.0",
+    "aws-iot-device-sdk-v2": "^1.25.0",
+    "onoff": "^6.0.3"
   }
 }

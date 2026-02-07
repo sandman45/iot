@@ -1,5 +1,7 @@
 # AWS IoT → Node.js → GPIO
 
+
+
 ## Big picture flow
 
 AWS sends a command (MQTT message)
@@ -35,13 +37,13 @@ Example: LED or relay on GPIO17.
 ```javascript
 const { Gpio } = require('onoff');
 
-const led = new Gpio(17, 'out');
+const motor = new Gpio(5, 'out');
 
 // turn ON
-led.writeSync(1);
+motor.writeSync(1);
 
 // turn OFF
-led.writeSync(0);
+motor.writeSync(0);
 
 ```
 
