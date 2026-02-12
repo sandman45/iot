@@ -1,2 +1,4 @@
 node_modules
 .idea
+/certs/*
+/code_for_pi/files/**

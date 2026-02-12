@@ -298,40 +298,9 @@ After running the start script, return to this screen to see the messages betwee
    
    Paste this and replace the paths + endpoints:
 
-   ```javascript
-   
-   const { mqtt, iot } = require('aws-iot-device-sdk-v2');
-   const path = require('path');
-   
-   const clientBootstrap = new mqtt.ClientBootstrap();
-   const config = iot.AwsIotMqttConnectionConfigBuilder.new_mtls_builder_from_path(
-    path.join(__dirname, 'certs/device.pem.crt'),
-    path.join(__dirname, 'certs/private.pem.key')
-    ).with_certificate_authority_from_path(
-    undefined,
-    path.join(__dirname, 'certs/AmazonRootCA1.pem')
-    )
-   .with_client_id('raspi-01')
-   .with_endpoint('YOUR_ENDPOINT_HERE')
-   .build();
-   
-   const client = new mqtt.MqttClient(clientBootstrap);
-   const connection = client.new_connection(config);
-   
-   (async () => {
-   await connection.connect();
-   console.log('Connected to AWS IoT');
-   
-   await connection.publish(
-   'raspi/test',
-   JSON.stringify({ message: 'Hello from Raspberry Pi!' }),
-   mqtt.QoS.AtLeastOnce
-   );
-   
-   console.log('Message published');
-   })();
+   see index.js included in this project `/code_for_pi/index.js`
 
-   ```
+
    Run it:
 
    ```
